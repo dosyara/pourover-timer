@@ -1,0 +1,37 @@
+{
+  "name": "Pourover Timer",
+  "short_name": "PouroverTimer",
+  "dir": "ltr",
+  "lang": "en-US",
+  "orientation": "any",
+  "start_url": "/",
+  "background_color": "#17a2b8",
+  "theme_color": "#17a2b8",
+  "display": "standalone",
+  "description": "Pourover Timer for v60",
+  "icons": [{
+    "src": "/dist/icons/t.png",
+    "sizes": "72x72"
+  }, {
+    "src": "/dist/icons/t.png",
+    "sizes": "96x96"
+  }, {
+    "src": "/dist/icons/t.png",
+    "sizes": "128x128"
+  }, {
+    "src": "/dist/icons/t.png",
+    "sizes": "144x144"
+  }, {
+    "src": "/dist/icons/t.png",
+    "sizes": "152x152"
+  }, {
+    "src": "/dist/icons/t.png",
+    "sizes": "192x192"
+  }, {
+    "src": "/dist/icons/t.png",
+    "sizes": "384x384"
+  }, {
+    "src": "/dist/icons/t.png",
+    "sizes": "512x512"
+  }]
+}

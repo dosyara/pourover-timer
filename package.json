@@ -1,0 +1,24 @@
+{
+  "name": "pourover-timer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "browserify": "^14.5.0",
+    "html": "^1.0.0",
+    "react": "^16.1.0",
+    "react-dom": "^16.1.0",
+    "react-hyperscript": "^3.0.0",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

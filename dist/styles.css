@@ -1,0 +1,19 @@
+html, body {
+    width: 100%;
+    margin: 0;
+}
+.app-root {
+    width: 100%;
+}
+.Timer {
+    -webkit-user-select: none;
+    user-select: none;
+}
+.TimeFace {
+    margin-top: 10%;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+.MessageView {
+    user-select: none;
+}

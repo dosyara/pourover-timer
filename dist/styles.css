@@ -8,6 +8,8 @@ html, body {
 .Timer {
     -webkit-user-select: none;
     user-select: none;
+    max-width: 400px;
+    margin: 0 auto;
 }
 .TimeFace {
     margin-top: 10%;

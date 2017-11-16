@@ -1,6 +1,6 @@
 {
-  "name": "Pourover Timer",
-  "short_name": "PouroverTimer",
+  "name": "Pour Over Timer",
+  "short_name": "PourOverTimer",
   "dir": "ltr",
   "lang": "en-US",
   "orientation": "any",
@@ -8,30 +8,30 @@
   "background_color": "#17a2b8",
   "theme_color": "#17a2b8",
   "display": "standalone",
-  "description": "Pourover Timer for v60",
+  "description": "Pour Over Timer for v60",
   "icons": [{
-    "src": "./dist/icons/favicon.png",
+    "src": "https://dosyara.github.io/pourover-timer//dist/icons/Icon-72.png",
     "sizes": "72x72"
   }, {
-    "src": "./dist/icons/favicon.png",
+    "src": "https://dosyara.github.io/pourover-timer//dist/icons/Icon-96.png",
     "sizes": "96x96"
   }, {
-    "src": "./dist/icons/favicon.png",
+    "src": "https://dosyara.github.io/pourover-timer//dist/icons/Icon-128.png",
     "sizes": "128x128"
   }, {
-    "src": "./dist/icons/favicon.png",
+    "src": "https://dosyara.github.io/pourover-timer//dist/icons/Icon-144.png",
     "sizes": "144x144"
   }, {
-    "src": "./dist/icons/favicon.png",
+    "src": "https://dosyara.github.io/pourover-timer//dist/icons/Icon-152.png",
     "sizes": "152x152"
   }, {
-    "src": "./dist/icons/favicon.png",
+    "src": "https://dosyara.github.io/pourover-timer//dist/icons/Icon-192.png",
     "sizes": "192x192"
   }, {
-    "src": "./dist/icons/favicon.png",
+    "src": "https://dosyara.github.io/pourover-timer//dist/icons/Icon-384.png",
     "sizes": "384x384"
   }, {
-    "src": "./dist/icons/favicon.png",
+    "src": "https://dosyara.github.io/pourover-timer//dist/icons/Icon-512.png",
     "sizes": "512x512"
   }]
 }

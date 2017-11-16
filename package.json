@@ -19,7 +19,7 @@
   "devDependencies": {},
   "scripts": {
     "start": "node index.js",
-    "build": "browserify ./dist/_entry.js -o ./dist/bundle.js",
+    "build": "browserify ./dist/_entry.js -o ./dist/bundle.min.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

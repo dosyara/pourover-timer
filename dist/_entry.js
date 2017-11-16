@@ -1,5 +1,5 @@
 const { Timer } = require('../components/Timer');
-const ReactDOM = require('react-dom');
+const ReactDOM = require('react-dom/cjs/react-dom.production.min');
 const { store, actions } = require('../lib/time-store');
 const h = require('react-hyperscript');
 

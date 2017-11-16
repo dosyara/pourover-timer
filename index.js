@@ -55,7 +55,7 @@ http.createServer(function (req, res) {
                     res.end(fileContent.replace('[[BODY_PLACEHOLDER]]', str));
                 }
             });
-        case '/dist/bundle.js':
+        case '/dist/_bundle.js':
             res.setHeader('Content-type', map['.js']);
 
             let b = browserify();

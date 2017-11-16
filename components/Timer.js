@@ -1,4 +1,4 @@
-const { Component } = require('react');
+const { Component } = require('react/cjs/react.production.min');
 const h = require('react-hyperscript');
 
 const {

@@ -39,13 +39,13 @@ const SectionTimeView = ({ icon, timeLeft, duration }) => {
             h(Icon, {
                 key: 'icon',
                 icon,
-                x: 170,
+                x: 172,
                 y: 250,
             }) :
             h(Icon, {
                 key: 'icon',
                 icon,
-                x: 130,
+                x: 135,
                 y: 250,
             })
         ,

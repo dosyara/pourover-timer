@@ -1,6 +1,7 @@
 const h = require('react-hyperscript');
 
-const icons = {
+function getIcon(name, params = {}) {
+    const icons = {
     pour:
 `<svg width="134" height="122" viewBox="0 0 192 175" xmlns="http://www.w3.org/2000/svg">
   <g stroke-width="3" stroke="#000" fill="none" fill-rule="evenodd">
@@ -42,6 +43,16 @@ const icons = {
     start:
 `<svg width="290" height="290" viewBox="0 0 290 290" xmlns="http://www.w3.org/2000/svg">
   <g fill="none" fill-rule="evenodd">
+    ${params.animate && `<animate 
+        id="fade" 
+        attributeType="xml"
+        attributeName="fill-opacity" 
+        begin="0s" 
+        values="1;0" 
+        dur="0.5s"
+        repeatCount="1"
+        fill="freeze"
+    />`}
     <circle fill="#199AD3" cx="145" cy="145" r="145"/>
     <path fill="#FFF" d="M204.32 145.4l-90.16 53.52V91.86"/>
   </g>
@@ -53,12 +64,16 @@ const icons = {
     <path stroke="#FFF" stroke-width="16" d="M105.64 154.88l26.7 27.4 89.3-80.78"/>
   </g>
 </svg>`,
-};
-const Icon = ({ icon, x, y }) => {
+    };
+
+    return icons[name];
+}
+
+const Icon = ({ icon, x, y, params }) => {
     return h('svg', {
         x,
         y,
-        dangerouslySetInnerHTML: { __html: icons[icon] }
+        dangerouslySetInnerHTML: { __html: getIcon(icon, params) }
     });
 };
 

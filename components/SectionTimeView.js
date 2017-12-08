@@ -20,11 +20,11 @@ const SectionTimeView = ({ icon, timeLeft, duration }) => {
         }),
         h('path.SectionTime', {
             key: 'SectionTime',
-            d: describeArc(200, 175, 30, startDeg, 359.999),
+            d: describeArc(200, 175, 33, startDeg, 359.999),
             strokeLinecap: 'round',
             fill: 'none',
             stroke: '#51bf90',
-            strokeWidth: 3
+            strokeWidth: 1
         }),
         h('text.SectionTimeText', {
             key: 'SectionTimeText',

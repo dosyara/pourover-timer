@@ -16,7 +16,7 @@ const Section = ({ section }) => {
         strokeLinecap: 'round',
         fill: 'none',
         stroke: colorByType[section.type],
-        strokeWidth: 5
+        strokeWidth: 3
     });
 };
 

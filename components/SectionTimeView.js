@@ -9,44 +9,36 @@ const SectionTimeView = ({ icon, timeLeft, duration }) => {
     const startDeg = 360 - Math.round((timeLeft / duration) * 360);
 
     return [
-        h('circle', {
-            key: 'circle',
-            cx: 200,
-            cy: 175,
-            r: 35,
-            fill: '#fff',
-            stroke: '#f5f5f5',
-            strokeWidth: 1,
-        }),
         h('path.SectionTime', {
             key: 'SectionTime',
-            d: describeArc(200, 175, 33, startDeg, 359.999),
+            d: describeArc(200, 250, 144, startDeg, 359.999),
             strokeLinecap: 'round',
             fill: 'none',
-            stroke: '#51bf90',
-            strokeWidth: 1
+            stroke: icon === 'time' ? '#51bf90' : '#199ad3',
+            strokeWidth: 2
         }),
         h('text.SectionTimeText', {
             key: 'SectionTimeText',
             x: 200,
-            y: 185,
-            fontSize: 30,
-            fill: '#333',
-            fontFamily: 'Verdana',
-            textAnchor: 'middle'
+            y: 230,
+            fontSize: 50,
+            fill: '#334457',
+            fontFamily: 'Helvetica Neue',
+            fontWeight: 300,
+            textAnchor: 'left'
         }, formatSec(timeLeft)),
-        icon === 'wait' ?
+        icon === 'time' ?
             h(Icon, {
                 key: 'icon',
                 icon,
-                x: 172,
-                y: 250,
+                x: 148,
+                y: 190,
             }) :
             h(Icon, {
                 key: 'icon',
                 icon,
-                x: 135,
-                y: 250,
+                x: 152,
+                y: 190,
             })
         ,
     ];

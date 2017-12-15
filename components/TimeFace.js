@@ -30,7 +30,7 @@ const TimeFace = (props) => {
         props.sectionType && h(SectionTimeView, {
             timeLeft: props.sectionLeft,
             duration: props.sectionDuration,
-            icon: props.sectionType,
+            icon: { wait: 'time', pour: 'drop' }[props.sectionType],
         }),
 
         [

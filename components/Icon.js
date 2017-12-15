@@ -64,6 +64,22 @@ function getIcon(name, params = {}) {
     <path stroke="#FFF" stroke-width="16" d="M105.64 154.88l26.7 27.4 89.3-80.78"/>
   </g>
 </svg>`,
+    drop:
+`
+<svg width="39.55" height="50" viewBox="0 0 59 74" xmlns="http://www.w3.org/2000/svg">
+  <g stroke-width="5" fill="none" fill-rule="evenodd">
+    <path d="M29.41 4C11.81 24.12 3 39.2 3 49.21 3 64.25 16.05 71 29.3 71s26.53-5.86 26.53-21.79c0-10.61-8.8-25.69-26.42-45.21z" stroke="#199AD3" fill="#199AD3"/>
+    <path d="M46.8 43.94c0 8.43-3.05 12.5-6.43 15.46" stroke="#FFF" stroke-linecap="round"/>
+  </g>
+</svg>
+`,
+    time:
+`<svg width="50" height="50" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <g fill-rule="nonzero" fill="#51BF90">
+    <path d="M40 0C18 0 0 18 0 40s18 40 40 40 40-18 40-40S62 0 40 0zm0 70c-16.67 0-30-13.33-30-30s13.33-30 30-30 30 13.33 30 30-13.33 30-30 30z"/>
+    <path d="M46.14 37.67v-14A6.64 6.64 0 0 0 39.57 17C35.96 17 33 20 33 23.67v16.66c0 1.67.66 3.34 1.97 4.67l9.86 10a6.44 6.44 0 0 0 4.6 2c1.64 0 3.28-.67 4.6-2a6.5 6.5 0 0 0 0-9.33l-7.89-8z"/>
+  </g>
+</svg>`,
     };
 
     return icons[name];

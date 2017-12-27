@@ -54,14 +54,14 @@ function getIcon(name, params = {}) {
         fill="freeze"
     />`}
     <circle fill="#199AD3" cx="145" cy="145" r="145"/>
-    <path fill="#FFF" d="M204.32 145.4l-90.16 53.52V91.86"/>
+    <path fill="#FFF" d="M204.32 145.4l-90.16 53.52V91.86" filter="url(#innershadow)"/>
   </g>
 </svg>`,
     done:
 `<svg width="290" height="290" viewBox="0 0 290 290" xmlns="http://www.w3.org/2000/svg">
   <g fill="none" fill-rule="evenodd">
     <circle fill="#51BF90" cx="145" cy="145" r="145"/>
-    <path stroke="#FFF" stroke-width="16" d="M105.64 154.88l26.7 27.4 89.3-80.78"/>
+    <path stroke="#FFF" stroke-width="16" d="M105.64 154.88l26.7 27.4 89.3-80.78" filter="url(#innershadow)"/>
   </g>
 </svg>`,
     drop:

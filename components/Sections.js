@@ -1,8 +1,11 @@
 const h = require('react-hyperscript');
 const { describeArc } = require('../lib/svg-helpers');
 
-const Sections = ({sections}) => {
-    return sections.slice().reverse().map((section, i) => section.timeLeft ? h(Section, { key: i, section }) : '');
+const Sections = ({ sections }) => {
+    return sections
+        .slice()
+        .reverse()
+        .map((section, i) => section.timeLeft ? h(Section, { key: i, section }) : '');
 };
 
 const colorByType = {
@@ -16,7 +19,7 @@ const Section = ({ section }) => {
         strokeLinecap: 'round',
         fill: 'none',
         stroke: colorByType[section.type],
-        strokeWidth: 3
+        strokeWidth: 4
     });
 };
 

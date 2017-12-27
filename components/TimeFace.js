@@ -15,12 +15,37 @@ const TimeFace = (props) => {
         onTouchStart: props.onTouchStart,
         onTouchEnd: props.onTouchEnd,
     }, [
+        h('defs', { dangerouslySetInnerHTML: {
+            __html: `
+            <linearGradient id="borderGradient" x1="40%" y1="0%" x2="60%" y2="0%" spreadMethod="pad">
+                <stop offset="0%"   stop-color="#50E3C2"/>
+                <stop offset="100%" stop-color="#218E93"/>
+            </linearGradient>
+
+            <filter id="innershadow" x0="-50%" y0="-50%" width="200%" height="200%">
+                <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"></feGaussianBlur>
+                <feOffset dy="2" dx="2"></feOffset>
+                <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowDiff"></feComposite>
+
+                <feFlood flood-color="#999" flood-opacity="0.55"></feFlood>
+                <feComposite in2="shadowDiff" operator="in"></feComposite>
+                <feComposite in2="SourceGraphic" operator="over" result="firstfilter"></feComposite>
+
+                <feGaussianBlur in="firstfilter" stdDeviation="3" result="blur2"></feGaussianBlur>
+                <feOffset dy="-2" dx="-3"></feOffset>
+                <feComposite in2="firstfilter" operator="arithmetic" k2="-1" k3="1" result="shadowDiff"></feComposite>
+
+                <feFlood flood-color="#999" flood-opacity="0.55"></feFlood>
+                <feComposite in2="shadowDiff" operator="in"></feComposite>
+                <feComposite in2="firstfilter" operator="over"></feComposite>
+            </filter>
+          ` }}),
         h('circle', {
             cx: 200,
             cy: 250,
-            r: 153,
+            r: 150,
             fill: '#fff',
-            stroke: '#f5f5f5',
+            stroke: 'url(#borderGradient)',
             strokeWidth: 1,
         }),
         h(TimeView, { time: props.timeLeft }),
@@ -29,7 +54,6 @@ const TimeFace = (props) => {
 
         props.sectionType && h(SectionTimeView, {
             timeLeft: props.sectionLeft,
-            duration: props.sectionDuration,
             icon: { wait: 'time', pour: 'drop' }[props.sectionType],
         }),
 
